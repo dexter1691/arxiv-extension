@@ -1,0 +1,33 @@
+{
+  "name": "arxiv-extension",
+  "description": "Unpack arxiv URLs into Paper Title; Author; Venue - Year",
+  "version": "1.0",
+  "icons":{
+    "128": "icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Make this page red"
+  },
+  "commands": {
+    "get_arxiv_description": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+E",
+        "windows": "Ctrl+Shift+E",
+        "mac": "MacCtrl+Shift+E"
+      },
+      "description":"Unpack arxiv URLs into Paper Title; Author; Venue - Year"
+    }
+  },
+  "manifest_version": 2
+}
