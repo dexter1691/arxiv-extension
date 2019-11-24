@@ -17,7 +17,7 @@
     "persistent": false
   },
   "browser_action": {
-    "default_title": "Make this page red"
+    "default_title": "Unpack this arxiv URL"
   },
   "commands": {
     "get_arxiv_description": {
