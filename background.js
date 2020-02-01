@@ -44,8 +44,9 @@ function copyToClipboard(resp) {
   };
   var venue = responseJSON['venue'];
   var year = responseJSON['year'];
+  var url = "https://arxiv.org/abs/" + responseJSON['arxivId'];
 
-  var formatted_response = String.format("{0}\n{1}\n{2}-{3}", title, author, venue, year);
+  var formatted_response = String.format("{0}\n{4}\n{1}\n{2}-{3}", title, author, venue, year, url);
   // No tabs or host permissions needed!
   var copyFrom = document.createElement("textarea");
 
